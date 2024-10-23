@@ -1,0 +1,225 @@
+.skillContainer{
+    padding: 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.skillContainer h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.skillContainer p{
+    text-align: center;
+    margin: 2rem 15%;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.onlineSkill{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.item{
+    grid-column: 1/3;
+}
+
+.onlineSkill .tech{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: #fff;
+    border-radius: 2rem;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.tech .skillVid{
+    height: 21rem;
+    width: 100%;
+}
+.tech span{
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 1.3rem;
+    font-size: 1.1rem;
+}
+.tech span b{
+    color: var(--bg-color);
+    font-size: 1.3rem;
+}
+.tech span b:hover{
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .onlineSkill{
+        display: flex;
+        flex-direction: column;
+    }
+    .onlineSkill .tech{
+        display: flex;
+        flex-direction: column;
+        background: black;
+        margin: 0 5%;
+        padding: 2rem;
+        height: 25rem;
+        overflow: hidden;
+    }
+    
+    .tech .skillVid{
+        height: 13rem;
+        width: 100%;
+    }
+    .skillContainer p{
+        text-align: center;
+        margin: 2rem 2%;
+        width: 100%;
+    }
+}
+
+.skillContainer .featuresh3{
+    margin: 2rem 0;
+    font-size: 2.3rem;
+    letter-spacing: 4px;
+}
+
+
+/** MORE FEATURES ***************************/
+.moreFeatureContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.moreFeatureContainer .featureSection {
+    text-align: left;
+}
+
+.moreFeat {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 15px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 0px 15px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 0px 15px 2px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: -2;
+}
+
+.moreFeat:hover{
+    transform: scale(1.1);
+}
+
+.moreFeat p{
+    text-align: left;
+    margin: 0.4rem 0;
+    font-family:  serif;
+}
+.moreFeat h4{
+    color: var(--bg-color);
+}
+
+.featureSection .black{
+    background: black;
+    color: #fff;
+}
+
+.skillContainer button{
+    margin-top: 3rem;
+    padding: 0.8rem 1.4rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 0px 15px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 0px 15px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 15px 2px rgba(0,0,0,0.75);
+    transition: all 0.6s ease-in;
+}
+.skillContainer button:hover{
+    background: #fff;
+    color: #333;
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+    .moreFeatureContainer .hideSection{
+        display: none;
+    }
+}
+
+.skillContainer .featureForm{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    width: 100%;
+    animation: pop-up 0.4s ease-in-out forwards;
+}
+
+
+@keyframes pop-up{
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.featureForm .formContainer{
+    padding: 2rem;
+    background: #fff;
+    opacity: 1;
+    z-index: 2;
+    width: 40rem;
+    margin-top: 105rem;
+    border-radius: 1rem;
+}
+
+.formContainer form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 1rem;
+}
+
+.formContainer form div{
+    display: flex;
+    gap: 1rem;
+}
+
+.formContainer form input{
+    height: 2.5rem;
+    width: 100%;
+    padding-left: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formContainer .closeIcon{
+    float: right;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.featureForm .formContainer form button{
+    border-radius: 3px;
+}

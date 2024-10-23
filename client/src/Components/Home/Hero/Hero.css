@@ -1,0 +1,213 @@
+.hero{
+    /* max-height: 70%; */
+}
+
+.heroContainer{
+    position: relative;
+    width: 100%;
+    background-image: url('../../../assets/tech.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    animation: bgChange 60s linear infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@keyframes bgChange{
+    0%{
+        background-image: url('../../../assets/tech.png');
+    }
+    10%{
+        background-image: url('../../../assets/webdevelopment.png');
+    }
+    20%{
+        background-image: url('../../../assets/fitness_dumbell.png');
+    }
+    30%{
+        background-image: url('../../../assets/marketing.png');
+    }
+    40%{
+        background-image: url('../../../assets/music_piano.png');
+    }
+    50%{
+        background-image: url('../../../assets/dance.png');
+    }
+    60%{
+        background-image: url('../../../assets/fashionDesign.png');
+    }
+    70%{
+        background-image: url('../../../assets/barbing.png');
+    }
+    80%{
+        background-image: url('../../../assets/Hairdresser.png');
+    }
+    90%{
+        background-image: url('../../../assets/trade.png');
+    }
+    90%{
+        background-image: url('../../../assets/music.png');
+    }
+}
+
+.hero .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.heroContainer .heroWrite{
+    /* padding-top: 20%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    z-index: 2;
+}
+.heroWrite h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+
+  @keyframes slidein {
+    from {
+      translate: 0 150vh;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  
+
+
+
+.heroWrite h3{
+    font-size: 1.8rem;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollText 10s linear infinite;
+}
+
+  @keyframes scrollText {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+.heroContainer .heroMessage{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    z-index: 2;
+    font-size: 1.3rem;
+    width: 50%;
+    text-align: center;
+    letter-spacing: 2px;
+    animation-duration: 2s;
+    animation-name: slideInfinite;
+}
+
+
+
+@keyframes slideInfinite {
+    from {
+      translate: 0 150vh;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+
+
+.heroContainer button{
+    margin-top: 2rem;
+    padding: 0.8rem 1.3rem;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--text-color);
+    border-radius: 35px;
+    background: var(--bg-color);
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+  
+  .heroContainer button:hover {
+    background: #000;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+@media screen and (max-width: 1000px) {
+    .heroContainer h1{
+        font-size: 3rem;
+    }
+    .heroContainer h3{
+        font-size: 1.2rem;
+    }
+    .heroContainer .heroMessage{
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .heroContainer h1{
+        font-size: 2.3rem;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .heroContainer h1{
+        font-size: 1.8rem;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .heroWrite h1{
+        font-size: 1.3rem;
+    }
+    .heroContainer h3{
+        font-size: 0.8rem;
+    }
+    .heroContainer .heroMessage{
+        font-size: 0.8rem;
+    }
+    .heroMessage .hideSmScreen{
+        display: none;
+    }
+    .heroContainer button{
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+}
