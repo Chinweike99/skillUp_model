@@ -52,6 +52,9 @@
     overflow: hidden;
     animation: scrollText ;
 }
+.aboutContent .aboutInfo p{
+  font-size: 1.3rem;
+}
 
 /* @keyframes scrollText {
     0% {
