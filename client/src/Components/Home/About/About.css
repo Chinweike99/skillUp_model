@@ -92,6 +92,9 @@
   .aboutContent .videoContainer .aboutVid{
     height: 20rem;
 }
+.aboutInfo p {
+  font-size: 1rem;
+}
 
   }
 

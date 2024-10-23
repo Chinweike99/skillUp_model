@@ -2,6 +2,8 @@
     padding: 4rem;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .skillContainer h1{
@@ -12,7 +14,7 @@
 
 .skillContainer p{
     text-align: center;
-    margin: 2rem 15%;
+    margin: 2rem 8%;
     font-size: 1.3rem;
     letter-spacing: 1px;
 }
@@ -48,7 +50,7 @@
     margin-top: 1.3rem;
     font-size: 1.1rem;
 }
-.tech span b{
+.tech p b{
     color: var(--bg-color);
     font-size: 1.3rem;
 }
@@ -152,6 +154,56 @@
     transform: scale(1.1);
     font-weight: 700;
 }
+
+@media screen and (max-width: 470px) {
+    .moreFeat {
+        text-align: left;
+    }
+    .featureSection .moreFeat p{
+        margin-left: 0;
+    }
+    .skillContainer{
+        padding: 4rem 0.8rem;
+        text-align: justify;
+        align-items: center;
+        justify-content: left;
+    }
+    .skillContainer p{
+        text-align: justify;
+        margin: 2rem 3%;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .onlineSkill .tech{
+        height: 16rem;
+        width: 100%;
+        margin: auto 0;
+    }
+    
+    .tech .skillVid{
+        height: 11rem;
+        width: 100%;
+    }
+    .onlineSkill{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .tech p b{
+        font-size: 1rem;
+    }
+    .tech p span{
+        display: none;
+    }
+    .skillContainer p{
+        margin: 1rem 8%;
+        /* font-size: 0.7rem ; */
+    }
+}
+
+
+
 
 @media screen and (max-width: 700px) {
     .moreFeatureContainer .hideSection{
