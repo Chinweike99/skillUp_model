@@ -53,7 +53,7 @@
     animation: scrollText ;
 }
 .aboutContent .aboutInfo p{
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 /* @keyframes scrollText {
