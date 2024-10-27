@@ -25,19 +25,7 @@
     font-family: sans-serif;
     color: black;
     background: #fff;
-    animation: animating-multiple-properties 2s 0s ease-in forwards;
 }
-
-@keyframes animating-multiple-properties {
-    from {
-      transform: translateY(-60vh);
-      background-color: rgb(33, 31, 31);
-      filter: brightness(75%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
 
 .regContent:hover{
     background: transparent;
@@ -47,19 +35,7 @@
 .regcontent2{
     background: black;
     color: #fff;
-    animation: animatingproperties 2s 0s ease-in forwards;
 }
-
-@keyframes animatingproperties {
-    from {
-      transform: translateY(100vh);
-      background-color: rgb(33, 31, 31);
-      filter: brightness(75%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
 
 .regcontent2:hover{
     background: var(--bg-color);
