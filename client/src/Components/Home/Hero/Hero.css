@@ -179,7 +179,7 @@
         padding: 0 2rem;
     }
     .heroContainer{
-        height: 60vh;
+        height: 50vh;
     }
 }
 
@@ -189,6 +189,7 @@
     }
     .heroContainer{
         height: 40vh;
+        width: 100vw;
     }
     
 }
