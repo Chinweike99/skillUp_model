@@ -83,7 +83,7 @@ form button{
     cursor: pointer;
 }
 
-@media screen and (max-width: 700) {
+@media screen and (max-width: 700px) {
     .coachReg{
         display: flex;
         flex-direction: column;
