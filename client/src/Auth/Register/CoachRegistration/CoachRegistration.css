@@ -48,6 +48,9 @@ form .coachReg{
     display: flex;
     gap: 4px;
 }
+form .coachReg input{
+    width: 50%;
+}
 
 form input{
     height: 2.5rem;
@@ -87,6 +90,9 @@ form button{
     .coachReg{
         display: flex;
         flex-direction: column;
+    }
+    form .coachReg input{
+        width: 100%;
     }
 }
 
